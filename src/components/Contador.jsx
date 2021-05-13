@@ -13,5 +13,5 @@ export function Counter() {
                 Increment
             </button>
         </div>
-    )
+    );
 }
