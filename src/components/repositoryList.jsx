@@ -1,4 +1,10 @@
-import { RepositoryItem } from "./repositoryItem"
+import { RepositoryItem } from "./RepositoryItem";
+
+const repository = {
+    name: 'foodfy',
+    description: 'Recipes',
+    link: 'https://github.com/thalesantana/foodfy' 
+}
 
 export function RepostitoryList(){
     return(
@@ -6,9 +12,9 @@ export function RepostitoryList(){
             <h1>Lista de repositórios</h1>
 
             <ul>
-                <RepositoryItem repository="unform24541"/>
-                <RepositoryItem />
-                <RepositoryItem />
+                <RepositoryItem repository = {repository}/>
+                <RepositoryItem repository = {repository}/>
+                <RepositoryItem repository = {repository}/>
             </ul>
 
         </section>

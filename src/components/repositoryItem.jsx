@@ -1,10 +1,10 @@
 export function RepositoryItem(props){
     return(
         <li>
-            <strong>unform</strong>
-            <p>{props.repository ?? 'Default'}</p>
+            <strong>{props.repository.name ?? 'Default'}</strong>
+            <p>{props.repository.description }</p>
 
-            <a href="">
+            <a href={props.repository.link}>
                 Acessar Repositório
             </a>
         </li>
